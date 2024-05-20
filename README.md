@@ -1,1 +1,1 @@
-# AI-ML-Based-intelligent-de-smoking-de-hazing-Tea
+# AI/ML Based intelligent desmoking/dehazing
