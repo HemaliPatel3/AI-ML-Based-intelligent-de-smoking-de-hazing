@@ -1,0 +1,165 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI-ML</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>AI-ML based intelligent de-smoking/de-hazing</h1>
+    </div>
+    <div class="img">
+        <h2>Image Upload</h2>
+        
+            <div class="btn">
+                <input type="file" name="file" accept=".png, .jpeg">
+                <input type="file" name="Dehase Image">
+            </div>
+        
+    </div>
+    <div class="vid">
+        <h2>Video Upload</h2>
+        <input type="file" name="file" accept=".MP4, .mkv, .MPEG-4, .MOV">
+        <input type="file" name="Dehase Image">
+    </div>
+</body>
+</html>---->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehazing</title>
+</head>
+<body>
+    <h1>Dehazing App</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".png, .jpeg">
+        <button type="submit">Dehaze</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData();
+            formData.append('file', e.target.file.files[0]);
+
+            const response = await fetch('/dehaze', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                const imgElement = document.createElement('img');
+                imgElement.src = 'data:image/jpeg;base64,' + result.result;
+                document.getElementById('result').innerHTML = '';
+                document.getElementById('result').appendChild(imgElement);
+            } else {
+                console.error('Error:', response.statusText);
+            }
+        });
+    </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-ML based intelligent de-smoking/de-hazing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading h1 {
+            color: #333333; /* Dark gray text color */
+        }
+
+        .img,
+        .vid {
+            border: 1px solid #cccccc; /* Light gray border */
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .img h2,
+        .vid h2 {
+            color: #333333; /* Dark gray text color */
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc; /* Light gray border */
+            border-radius: 3px;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333333; /* Dark gray text color */
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            background-color: #e5e5e5; /* Light gray hover background */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI-ML based intelligent de-smoking/de-hazing</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".png, .jpeg">
+            <button type="submit">Dehaze</button>
+        </form>
+        <div id="result"></div>
+
+        <script>
+            document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData();
+                formData.append('file', e.target.file.files[0]);
+
+                const response = await fetch('/dehaze', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    const imgElement = document.createElement('img');
+                    imgElement.src = 'data:image/jpeg;base64,' + result.result;
+                    document.getElementById('result').innerHTML = '';
+                    document.getElementById('result').appendChild(imgElement);
+                } else {
+                    console.error('Error:', response.statusText);
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
+

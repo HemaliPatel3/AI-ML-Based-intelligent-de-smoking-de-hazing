@@ -1,0 +1,116 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* /*White background 
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.heading h1 {
+    color: #333333; /* Dark gray text color 
+}
+
+.img,
+.vid {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.img h2,
+.vid h2 {
+    color: #333333; /* Dark gray text color 
+    margin-bottom: 10px;
+}
+
+.img input[type="file"],
+.vid input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.img input[type="file"],
+.vid input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light gray border 
+    border-radius: 3px;
+    background-color: #f9f9f9; /* Light gray background 
+    color: #333333; /* Dark gray text color 
+    cursor: pointer;
+}
+
+.img input[type="file"]:hover,
+.vid input[type="file"]:hover {
+    background-color: #e5e5e5; /* Light gray hover background 
+}
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading h1 {
+    color: #333333; /* Dark gray text color */
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+}
+
+.form-container h2 {
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 10px;
+}
+
+.file-input {
+    margin-bottom: 10px;
+}
+
+.file-input input[type="file"] {
+    display: none; /* Hide the file input */
+}
+
+.file-input label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3366cc; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-input label:hover {
+    background-color: #204d74; /* Darker blue background color on hover */
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the displayed image */
+}
